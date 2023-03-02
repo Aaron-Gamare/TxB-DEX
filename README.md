@@ -1,6 +1,6 @@
 ## Quick start
 
-The first things is installing its
+The first things is installing all the
 dependencies:
 
 ```sh
