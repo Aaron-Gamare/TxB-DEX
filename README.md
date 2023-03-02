@@ -34,13 +34,6 @@ Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
 need to have [Metamask](https://metamask.io) installed and listening to
 `localhost 8545`.
 
-## Troubleshooting
-
-- `Invalid nonce` errors: if you are seeing this error on the `npx hardhat node`
-  console, try resetting your Metamask account. This will reset the account's
-  transaction history and also the nonce. Open Metamask, click on your account
-  followed by `Settings > Advanced > Reset Account`.
-
 ## Setting up your editor
 
 [Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
