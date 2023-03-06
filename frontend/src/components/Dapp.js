@@ -18,6 +18,7 @@ import { Transfer } from "./Transfer";
 import { TransactionErrorMessage } from "./TransactionErrorMessage";
 import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
+import { Landing } from "./Landing"
 
 // This is the Hardhat Network id that we set in our hardhat.config.js.
 // Here's a list of network ids https://docs.metamask.io/guide/ethereum-provider.html#properties
@@ -74,13 +75,16 @@ export class Dapp extends React.Component {
     // clicks a button. This callback just calls the _connectWallet method.
     if (!this.state.selectedAddress) {
       return (
-        <ConnectWallet 
-          connectWallet={() => this._connectWallet()} 
-          networkError={this.state.networkError}
-          dismiss={() => this._dismissNetworkError()}
-        />
+        // <ConnectWallet 
+        //   connectWallet={() => this._connectWallet()} 
+        //   networkError={this.state.networkError}
+        //   dismiss={() => this._dismissNetworkError()}
+        // />
+        <Landing />
       );
     }
+
+  
 
     // If the token data or the user's balance hasn't loaded yet, we show
     // a loading component.
